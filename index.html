@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Internet of Things</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <style type="text/css">
+    .nocase {
+        text-transform: none !important;
+    }
+    /*BLINKING EYE: https://codepen.io/bfred-it/pen/RNGOQWp;l/.*/
+
+    #lid {
+        animation: blink 1.5s infinite;
+    }
+
+    #eye {
+        animation: squeeze 1.5s infinite;
+    }
+
+    @keyframes blink {
+        90% {
+            transform: none;
+            animation-timing-function: ease-in;
+        }
+        93% {
+            transform: translateY(15px) scaleY(0)
+        }
+        100% {
+            animation-timing-function: ease-out;
+        }
+    }
+
+    @keyframes squeeze {
+        90% {
+            transform: none;
+            animation-timing-function: ease-in;
+        }
+        93% {
+            transform: translateY(3px) scaleY(0.8)
+        }
+        100% {
+            animation-timing-function: ease-out;
+        }
+    }
+
+    img {
+        border: none !important;
+        box-shadow: none !important;
+        background: none !important;
+    }
+
+
+    .row {
+        width: 100%;
+    }
+
+    .col-50 {
+        width: 50%;
+        float: left;
+    }
+
+    .col-45 {
+        width: 45%;
+        float: left;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h2>Internet of Things</h2>
+                <hr>
+                <h3 class="nocase">Some "Thing" is always watching you!</h3>
+                <svg width="100" height="100" viewBox="0 0 30 30" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <path d="M0,15.089434 C0,16.3335929 5.13666091,24.1788679 14.9348958,24.1788679 C24.7325019,24.1788679 29.8697917,16.3335929 29.8697917,15.089434 C29.8697917,13.8456167 24.7325019,6 14.9348958,6 C5.13666091,6 0,13.8456167 0,15.089434 Z" id="outline"></path>
+                        <mask id="mask">
+                            <rect width="100%" height="100%" fill="white"></rect>
+                            <use xlink:href="#outline" id="lid" fill="black" />
+                        </mask>
+                    </defs>
+                    <g id="eye">
+                        <path d="M0,15.089434 C0,16.3335929 5.13666091,24.1788679 14.9348958,24.1788679 C24.7325019,24.1788679 29.8697917,16.3335929 29.8697917,15.089434 C29.8697917,13.8456167 24.7325019,6 14.9348958,6 C5.13666091,6 0,13.8456167 0,15.089434 Z M14.9348958,22.081464 C11.2690863,22.081464 8.29688487,18.9510766 8.29688487,15.089434 C8.29688487,11.2277914 11.2690863,8.09740397 14.9348958,8.09740397 C18.6007053,8.09740397 21.5725924,11.2277914 21.5725924,15.089434 C21.5725924,18.9510766 18.6007053,22.081464 14.9348958,22.081464 L14.9348958,22.081464 Z M18.2535869,15.089434 C18.2535869,17.0200844 16.7673289,18.5857907 14.9348958,18.5857907 C13.1018339,18.5857907 11.6162048,17.0200844 11.6162048,15.089434 C11.6162048,13.1587835 13.1018339,11.593419 14.9348958,11.593419 C15.9253152,11.593419 14.3271242,14.3639878 14.9348958,15.089434 C15.451486,15.7055336 18.2535869,14.2027016 18.2535869,15.089434 L18.2535869,15.089434 Z" fill="#FFFFFF"></path>
+                        <use xlink:href="#outline" mask="url(#mask)" fill="#FFFFFF" />
+                    </g>
+                </svg>
+                <br>
+                <a href="http://bit.ly/iot-ppt" target="_blank">http://bit.ly/iot-ppt</a>
+                <br>
+                <p>
+                    Arvind Ravulavaru
+                </p>
+            </section>
+            <section>
+                <h2 class="lowercase">Me</h2>
+                <hr>
+                <p>@arvindr21</p>
+            </section>
+            <section>
+                <h2 class="nocase">Agenda</h2>
+                <hr>
+                <div>
+                    <img src="imgs/iot.png" class="fragment" style="width:23%">
+                </div>
+            </section>
+            <section>
+                <img src="imgs/iot.png" style="width: 39%">
+            </section>
+            <section>
+                <h1>What the <em class="nocase">IoT</em> ?</h1>
+            </section>
+            <section>
+                <img src="imgs/joke1.jpg" style="width: 60%">
+            </section>
+            <section>
+                <img src="imgs/1.png">
+            </section>
+            <section>
+                <h1 class="nocase">In Simpler Terms : </h1>
+            </section>
+            <section>
+                <img src="imgs/2.png">
+            </section>
+            <section>
+                <h1 class="nocase">On a diet?</h1>
+                <hr>
+                <p>No Problem!</p>
+            </section>
+            <section>
+                <img src="imgs/cartoon-iot-scales.jpg" style="width: 50%">
+            </section>
+            <section>
+                <h1 class="nocase">Ahem..</h1>
+                <hr>
+                <img src="imgs/20140605_healthkit_pie-small_0-100479165-orig.jpg" style="width: 50%">
+            </section>
+            <section>
+                <h1 class="nocase">Connectivity Chaos</h1>
+                <hr>
+                <img style="width: 60%" src="imgs/05_klossnerj_internetofthings_03-24-2014-100535431-orig.jpg">
+            </section>
+            <section>
+                <h1 class="nocase">Social Friends?</h1>
+                <hr>
+                <img src="imgs/B68Ks46IYAE-UNx.jpg">
+            </section>
+            <section>
+                <h2 class="nocase">Internet of Things is Quite <u><em>old</em></u></h2>
+            </section>
+            <section>
+                <h2 class="nocase">Well... Nearly... <br><u><em>40-ish years old</em></u></h2>
+            </section>
+            <section>
+                <h2 class="nocase">The First IoT Device*</h2>
+                <hr>
+                <p>
+                    <div class="col-50">
+                        <img src="imgs/3.png" width="81%">
+                    </div>
+                    <div class="col-50" style="font-size: 35px">
+                        <ul>
+                            <li>A Coke Machine at Carnegie Mellon University, in <em><b>1982</b></em></li>
+                            <li>By four exercise challenged but ingenious graduate students, <em>Mike Kazar, David Nichols, John Zsarnay, & Ivor Durham</em></li>
+                            <li>So they could check from their desks if the machine was loaded with cold coke</li>
+                        </ul>
+                    </div>
+                </p>
+            </section>
+            <section>
+                <h3 class="nocase">Did You Know :<br>The first webpage was created in <em><u>1991</u></em></h3>
+            </section>
+            <section>
+                <h2 class="nocase">Another Early IoT Device</h2>
+                <hr>
+                <p>
+                    <div class="col-50">
+                        <img src="imgs/4.png" width="81%">
+                    </div>
+                    <div class="col-50" style="font-size: 35px">
+                        <ul>
+                            <li>The Internet Toaster by <em><b>John Romkey</b></em> in <em><b>1989</b></em></li>
+                            <li>Connected to the internet with TCP/IP</li>
+                            <li>Controlled via Simple Networking Management Protocol Management Information Base (SNMP MIB)</li>
+                            <li>One control to turn on/off</li>
+                        </ul>
+                    </div>
+                </p>
+            </section>
+            <section>
+                <h2 class="nocase">The Trojan Room Coffee Pot</h2>
+                <hr>
+                <p>
+                    <div class="col-50">
+                        <img src="imgs/5.png" width="81%">
+                    </div>
+                    <div class="col-50" style="font-size: 32px">
+                        <ul>
+                            <li>Created by <em><b>Quentin Stafford-Fraser</b></em> and <em><b>Paul Jardetzky</b></em> in <em><b>1993</b></em></li>
+                            <li>It was located in the 'Trojan Room' within the Computer Laboratory of the University of Cambridge</li>
+                            <li>It used to monitor the pot levels with an image being updated about 3x a minute and sent to the buildings server</li>
+                        </ul>
+                    </div>
+                </p>
+            </section>
+            <section>
+                <h1 style="font-size: 63px;" class="nocase">Laziness is the Mother of Invention!</h1>
+            </section>
+            <section>
+                <h1 class="nocase">IoT In the Real World</h1>
+            </section>
+            <section>
+                <h1 class="nocase">Healthcare</h1>
+                <hr>
+                <img src="imgs/6.png">
+            </section>
+            <section>
+                <h2 class="nocase">The Heart will notify The Hospital</h2>
+                <hr>
+                <img src="imgs/7.png" style="width: 80%">
+            </section>
+            <section>
+                <h2 class="nocase">Wearables</h2>
+                <hr>
+                <img src="imgs/10.jpg" style="width: 60%">
+            </section>
+            <section>
+                <h2 class="nocase">Consumer IoT</h2>
+                <hr>
+                <img src="imgs/8.png" style="width: 80%">
+            </section>
+            <section>
+                <h2 class="nocase">The Smart Toilet (*-*)</h2>
+                <hr>
+                <img src="imgs/9.jpg" style="width: 55%">
+            </section>
+            <section>
+                <img src="imgs/smrt2.png" style="width: 80%">
+            </section>
+            <section>
+                <h2>Roombah...!!!</h2>
+                <hr>
+                <img src="imgs/roomba.gif" style="width: 80%">
+            </section>
+            <section>
+                <h1 class="nocase"><em>IIoT</em></h1>
+            </section>
+            <section>
+                <h2 class="nocase">The Toothpaste Factory (*~*)</h2>
+                <hr>
+                <img src="imgs/11.jpg" style="width: 50%">
+            </section>
+            <section>
+                <h1 class="nocase">Industrial IoT</h1>
+                <hr>
+                <img src="imgs/12.png">
+            </section>
+            <section>
+                <img src="imgs/almostall.png">
+            </section>
+            <section style="background: white;">
+                <h3 class="nocase" style="color: black;">Solution Architecture</h3>
+                <hr>
+                <img src="imgs/02_01.png">
+            </section>
+            <section>
+                <h3 class="nocase">Last Mile Connectivity</h3>
+            </section>
+            <section style="background: white;">
+                <h3 class="nocase" style="color: black;">Cloud Computing</h3>
+                <hr>
+                <img src="imgs/02_14.png" style="width:55%">
+            </section>
+            <section style="background: white;">
+                <h3 class="nocase" style="color: black;">Fog Computing</h3>
+                <hr>
+                <img src="imgs/02_15.png" style="width:65%">
+            </section>
+            <section>
+                <h3 class="nocase">Hardware Programming</h3>
+                <hr>
+                <a href="https://www.raspberrypi.org/">Raspberry Pi 3</a> Linux based programming.
+                <pre><code>
+            	Python | JavaScript | C | C++
+            </code></pre>
+            </section>
+            <section>
+                <h3 class="nocase">Last Mile Connectivity</h3>
+                <hr> Wireless Fidelity
+            </section>
+            <section>
+                <h3 class="nocase">IoT Middleware</h3>
+                <hr>
+                <ol>
+                    <li><a href="https://www.packtpub.com/hardware-and-creative/advanced-iot-javascript">Build your own IoT platform</a></li>
+                    <li><a href="https://www.packtpub.com/virtualization-and-cloud/enterprise-internet-things-handbook">Off-the-shelf platforms</a>
+                    	<br>
+                    	Options:
+                        <ul>
+                            <li>AWS IoT</li>
+                            <li>Google IoT Core</li>
+                            <li>Microsoft Azure IoT</li>
+                            <li>IBM IoT</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+            <section>
+            	<h3 class="nocase">Other options</h3>
+                <hr>
+                <ul>
+                	<li><a href="https://thingspeak.com/">ThingSpeak</a></li>
+                	<li><a href="https://thingsboard.io/">ThingsBoard</a></li>
+                </ul>
+            </section>
+            <section>
+            	<h3 class="nocase">Question?</h3>
+            	<hr>
+            	<h4>Thanks!</h4>                
+            </section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        slideNumber: true,
+        history: true,
+        dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+    });
+    </script>
+</body>
+
+</html>
